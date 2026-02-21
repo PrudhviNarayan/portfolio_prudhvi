@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prudhvi's | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0f172a;color:#e2e8f0;line-height:1.6}
+
+    header{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:linear-gradient(135deg,#020617,#0f172a);
+    }
+
+    .hero{
+      background:rgba(30,41,59,0.4);
+      backdrop-filter:blur(10px);
+      padding:40px;
+      border-radius:20px;
+      box-shadow:0 0 30px rgba(0,0,0,0.5);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .profile-pic{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #38bdf8;
+      margin-bottom:20px;
+      transition:0.4s;
+      box-shadow:0 0 25px rgba(56,189,248,0.6);
+    }
+    .profile-pic:hover{
+      transform:scale(1.08);
+      box-shadow:0 0 40px rgba(56,189,248,1);
+    }
+
+    header h1{font-size:3rem}
+    header span{color:#38bdf8}
+    header p{margin-top:10px}
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:10px 25px;
+      border-radius:30px;
+      background:#38bdf8;
+      color:#0f172a;
+      text-decoration:none;
+      transition:0.3s;
+    }
+    .btn:hover{
+      background:white;
+      transform:translateY(-3px);
+    }
+
+    section{padding:70px 10%}
+    h2{margin-bottom:20px;color:#38bdf8;text-align:center}
+
+    .skills{max-width:600px;margin:auto}
+
+    .skill{
+      margin-bottom:20px;
+    }
+
+    .skill p{margin-bottom:5px}
+
+    .progress{
+      background:#1e293b;
+      border-radius:20px;
+      overflow:hidden;
+    }
+
+    .progress-bar{
+      height:12px;
+      background:#38bdf8;
+      border-radius:20px;
+      animation:load 2s ease-in-out;
+    }
+
+    @keyframes load{
+      from{width:0}
+    }
+
+    .projects p{
+      background:#1e293b;
+      padding:15px;
+      border-radius:10px;
+      margin:10px 0;
+      transition:0.3s;
+      text-align:center;
+    }
+    .projects p:hover{
+      transform:scale(1.05);
+      background:#334155;
+    }
+
+    footer{text-align:center;padding:20px;background:#1e293b}
+
+    @media(max-width:768px){
+      header h1{font-size:2rem}
+      .hero{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img src="DON.jpeg" alt="Prudhvi Profile Picture" class="profile-pic">
+      <h1>Hello, I'm <span>Prudhvi Narayan</span></h1>
+      <p>Aspiring Software Developer & Tech Enthusiast</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center;max-width:700px;margin:auto;">
+      I am a passionate student interested in software development, web technologies and problem solving. I enjoy building academic mini projects and learning new programming skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill"><p>C Programming</p><div class="progress"><div class="progress-bar" style="width:90%"></div></div></div>
+      <div class="skill"><p>Java</p><div class="progress"><div class="progress-bar" style="width:85%"></div></div></div>
+      <div class="skill"><p>Python</p><div class="progress"><div class="progress-bar" style="width:80%"></div></div></div>
+      <div class="skill"><p>HTML</p><div class="progress"><div class="progress-bar" style="width:95%"></div></div></div>
+      <div class="skill"><p>CSS</p><div class="progress"><div class="progress-bar" style="width:90%"></div></div></div>
+      <div class="skill"><p>JavaScript</p><div class="progress"><div class="progress-bar" style="width:75%"></div></div></div>
+      <div class="skill"><p>MongoDB</p><div class="progress"><div class="progress-bar" style="width:70%"></div></div></div>
+      <div class="skill"><p>Data Structures</p><div class="progress"><div class="progress-bar" style="width:80%"></div></div></div>
+      <div class="skill"><p>Algorithms</p><div class="progress"><div class="progress-bar" style="width:75%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p>Fake Review Detection System</p>
+    <p>Mini Academic Projects on Hybrid model</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Email: prudhvigajjela8522@gmail.com</p>
+    <p style="text-align:center;">LinkedIn: linkedin.com/in/prudhvinarayan</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Prudhvi Portfolio</p>
+  </footer>
+</body>
+</html>
