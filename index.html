@@ -6,6 +6,9 @@
   <title>Prudhvi Narayan | Portfolio</title>
   <meta name="description" content="Portfolio of Prudhvi Narayan, an aspiring software developer and tech enthusiast.">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon_new.png">
+  
   <!-- Modern Font: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,13 +104,23 @@
     }
 
     .logo {
-      font-weight: 800;
-      font-size: 1.5rem;
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
       text-decoration: none;
-      letter-spacing: -0.5px;
+    }
+
+    .nav-logo-img {
+      height: 42px;
+      width: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .logo:hover .nav-logo-img {
+      transform: scale(1.08);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
     }
 
     .nav-links {
@@ -395,6 +408,21 @@
 
     .project-card:hover::before {
       transform: scaleX(1);
+      box-shadow: 0 0 15px var(--primary), 0 0 20px var(--accent);
+    }
+
+    .status-badge {
+      align-self: flex-start;
+      background: rgba(139, 92, 246, 0.15);
+      color: #c4b5fd;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
     }
 
     .project-card h3 {
@@ -559,7 +587,9 @@
 
   <!-- Sticky Navigation -->
   <nav>
-    <a href="#" class="logo">PN.</a>
+    <a href="#" class="logo">
+      <img src="favicon_new.png" alt="PN Logo" class="nav-logo-img">
+    </a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -581,7 +611,7 @@
       </div>
       <div class="hero-image">
         <div class="profile-wrapper">
-          <img src="DON.jpeg" alt="Prudhvi Profile Picture" class="profile-pic" onerror="this.src='https://ui-avatars.com/api/?name=Prudhvi+Narayan&background=38bdf8&color=fff&size=512&bold=true'">
+          <img src="DON!.jpeg" alt="Prudhvi Profile Picture" class="profile-pic" onerror="this.src='https://ui-avatars.com/api/?name=Prudhvi+Narayan&background=38bdf8&color=fff&size=512&bold=true'">
         </div>
       </div>
     </div>
@@ -592,8 +622,8 @@
     <h2 class="section-title fade-in">About Me</h2>
     <div class="about-card fade-in delay-100">
       <p>
-        I am a passionate student deeply interested in software development, modern web technologies, and complex problem-solving. I thrive on building academic mini-projects and continuously expanding my programming skill set. My objective is to leverage my foundational knowledge in algorithms and development to create robust applications and contribute to innovative tech solutions.
-      </p>
+  I am a highly motivated and technology-driven student with a strong passion for software development, modern web technologies, and analytical problem-solving. I actively engage in building academic and personal projects to strengthen my practical development skills and deepen my understanding of scalable applications. With a solid foundation in programming, algorithms, and software engineering principles, I continuously strive to learn emerging technologies and contribute to innovative, impactful digital solutions.
+		</p>
     </div>
   </section>
 
@@ -691,8 +721,22 @@
     <h2 class="section-title fade-in">Featured Projects</h2>
     <div class="projects-grid">
       
-      <!-- Project 1 -->
+      <!-- Featured Project -->
       <div class="project-card fade-in">
+        <div class="status-badge">AI + Healthcare</div>
+        <h3>Monitoring Cardiac Vascular Health Using TinyML</h3>
+        <p>Developed a TinyML-based healthcare monitoring system capable of analyzing cardiac vascular health data in real time on low-power edge devices. The project focuses on efficient machine learning inference for wearable and embedded healthcare applications, enabling continuous monitoring with reduced latency and power consumption.</p>
+        <div class="project-tags">
+          <span class="tag">TinyML</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Healthcare AI</span>
+          <span class="tag">IoT</span>
+          <span class="tag">Embedded Systems</span>
+        </div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="project-card fade-in delay-100">
         <h3>Campus Event Manager</h3>
         <p>A comprehensive system designed to streamline the planning, registration, and execution of campus club events seamlessly.</p>
         <div class="project-tags">
@@ -703,7 +747,7 @@
       </div>
 
       <!-- Project 2 -->
-      <div class="project-card fade-in delay-100">
+      <div class="project-card fade-in delay-200">
         <h3>ReviewGuard AI</h3>
         <p>An intelligent application focused on analyzing e-commerce text and identifying deceptive/fake reviews using modern data techniques.</p>
         <div class="project-tags">
@@ -714,7 +758,7 @@
       </div>
 
       <!-- Project 3 -->
-      <div class="project-card fade-in delay-200">
+      <div class="project-card fade-in delay-300">
         <h3>Hybrid Academic Hub</h3>
         <p>Various micro-service mini-projects exploring hybrid web architectures and innovative digital solutions for academics.</p>
         <div class="project-tags">
