@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prudhvi Narayan | Portfolio</title>
   <meta name="description" content="Portfolio of Prudhvi Narayan, an aspiring software developer and tech enthusiast.">
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo_mine.png">
 
-  
+
   <!-- Modern Font: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  
+
   <style>
     :root {
       --bg-color: #0f172a;
@@ -56,7 +57,7 @@
       overflow: hidden;
       pointer-events: none;
     }
-    
+
     .blob {
       position: absolute;
       border-radius: 50%;
@@ -64,7 +65,7 @@
       opacity: 0.4;
       animation: float 10s infinite alternate ease-in-out;
     }
-    
+
     .blob-1 {
       top: -10%;
       left: -10%;
@@ -72,7 +73,7 @@
       height: 40vw;
       background: rgba(56, 189, 248, 0.25);
     }
-    
+
     .blob-2 {
       bottom: -10%;
       right: -10%;
@@ -83,8 +84,13 @@
     }
 
     @keyframes float {
-      0% { transform: translate(0, 0) scale(1); }
-      100% { transform: translate(5%, 5%) scale(1.05); }
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(5%, 5%) scale(1.05);
+      }
     }
 
     /* Navigation */
@@ -152,7 +158,7 @@
     .nav-links a:hover {
       color: var(--primary);
     }
-    
+
     .nav-links a:hover::after {
       width: 100%;
     }
@@ -301,7 +307,7 @@
       margin: 0 auto;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     }
-    
+
     .about-card p {
       font-size: 1.2rem;
       color: var(--text-muted);
@@ -362,7 +368,8 @@
       height: 100%;
       background: linear-gradient(90deg, var(--primary), var(--accent));
       border-radius: 10px;
-      width: 0; /* Animated via JS */
+      width: 0;
+      /* Animated via JS */
       transition: width 1.5s cubic-bezier(0.1, 0.5, 0.1, 1);
     }
 
@@ -492,7 +499,7 @@
     .contact-item a:hover {
       color: var(--primary);
     }
-    
+
     .contact-icon {
       width: 48px;
       height: 48px;
@@ -528,21 +535,35 @@
       transform: translateY(40px);
       transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
     }
 
     /* Delay utilities for staggered animations */
-    .delay-100 { transition-delay: 100ms; }
-    .delay-200 { transition-delay: 200ms; }
-    .delay-300 { transition-delay: 300ms; }
+    .delay-100 {
+      transition-delay: 100ms;
+    }
+
+    .delay-200 {
+      transition-delay: 200ms;
+    }
+
+    .delay-300 {
+      transition-delay: 300ms;
+    }
 
     /* Responsive Design */
     @media (max-width: 1024px) {
-      .hero-text h1 { font-size: 3.5rem; }
-      .profile-pic { width: 320px; height: 320px; }
+      .hero-text h1 {
+        font-size: 3.5rem;
+      }
+
+      .profile-pic {
+        width: 320px;
+        height: 320px;
+      }
     }
 
     @media (max-width: 768px) {
@@ -551,33 +572,42 @@
         padding: 15px;
         gap: 15px;
       }
+
       .hero-content {
         flex-direction: column-reverse;
         text-align: center;
         margin-top: 40px;
       }
+
       .hero-text p {
         margin: 0 auto 30px;
       }
+
       .hero-btns {
         justify-content: center;
       }
+
       .profile-pic {
         width: 280px;
         height: 280px;
       }
+
       section {
         padding: 100px 5%;
       }
+
       .section-title {
         font-size: 2.2rem;
       }
-      .about-card, .contact-wrapper {
+
+      .about-card,
+      .contact-wrapper {
         padding: 40px 25px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Background Ambient Effect -->
@@ -590,7 +620,7 @@
   <nav>
     <img src="logo_mine.png" alt="PN Logo" class="nav-logo-img">
 
-      
+
     </a>
     <div class="nav-links">
       <a href="#about">About</a>
@@ -605,7 +635,8 @@
     <div class="hero-content fade-in">
       <div class="hero-text">
         <h1>Hello, I'm <br><span>Prudhvi Narayan</span></h1>
-        <p>Aspiring Software Developer & Tech Enthusiast, passionate about crafting robust and beautiful digital experiences.</p>
+        <p>Aspiring Software Developer & Tech Enthusiast, passionate about crafting robust and beautiful digital
+          experiences.</p>
         <div class="hero-btns">
           <a href="#contact" class="btn">Contact Me</a>
           <a href="#projects" class="btn btn-outline">View Work</a>
@@ -613,7 +644,8 @@
       </div>
       <div class="hero-image">
         <div class="profile-wrapper">
-          <img src="port.jpeg" alt="Prudhvi Profile Picture" class="profile-pic" onerror="this.src='https://ui-avatars.com/api/?name=Prudhvi+Narayan&background=38bdf8&color=fff&size=512&bold=true'">
+          <img src="port.jpeg" alt="Prudhvi Profile Picture" class="profile-pic"
+            onerror="this.src='https://ui-avatars.com/api/?name=Prudhvi+Narayan&background=38bdf8&color=fff&size=512&bold=true'">
         </div>
       </div>
     </div>
@@ -624,8 +656,12 @@
     <h2 class="section-title fade-in">About Me</h2>
     <div class="about-card fade-in delay-100">
       <p>
-  I am a highly motivated and technology-driven student with a strong passion for software development, modern web technologies, and analytical problem-solving. I actively engage in building academic and personal projects to strengthen my practical development skills and deepen my understanding of scalable applications. With a solid foundation in programming, algorithms, and software engineering principles, I continuously strive to learn emerging technologies and contribute to innovative, impactful digital solutions.
-		</p>
+        I am a highly motivated and technology-driven student with a strong passion for software development, modern web
+        technologies, and analytical problem-solving. I actively engage in building academic and personal projects to
+        strengthen my practical development skills and deepen my understanding of scalable applications. With a solid
+        foundation in programming, algorithms, and software engineering principles, I continuously strive to learn
+        emerging technologies and contribute to innovative, impactful digital solutions.
+      </p>
     </div>
   </section>
 
@@ -643,7 +679,7 @@
           <div class="progress-fill" data-width="90%"></div>
         </div>
       </div>
-      
+
       <div class="skill-card fade-in delay-100">
         <div class="skill-header">
           <span class="skill-name">Java</span>
@@ -653,7 +689,7 @@
           <div class="progress-fill" data-width="85%"></div>
         </div>
       </div>
-      
+
       <div class="skill-card fade-in delay-200">
         <div class="skill-header">
           <span class="skill-name">Python</span>
@@ -722,12 +758,15 @@
   <section id="projects">
     <h2 class="section-title fade-in">Featured Projects</h2>
     <div class="projects-grid">
-      
+
       <!-- Featured Project -->
       <div class="project-card fade-in">
         <div class="status-badge">AI + Healthcare</div>
         <h3>Monitoring Cardiac Vascular Health Using TinyML</h3>
-        <p>Developed a TinyML-based healthcare monitoring system capable of analyzing cardiac vascular health data in real time on low-power edge devices. The project focuses on efficient machine learning inference for wearable and embedded healthcare applications, enabling continuous monitoring with reduced latency and power consumption.</p>
+        <p>Developed a TinyML-based healthcare monitoring system capable of analyzing cardiac vascular health data in
+          real time on low-power edge devices. The project focuses on efficient machine learning inference for wearable
+          and embedded healthcare applications, enabling continuous monitoring with reduced latency and power
+          consumption.</p>
         <div class="project-tags">
           <span class="tag">TinyML</span>
           <span class="tag">Machine Learning</span>
@@ -740,7 +779,8 @@
       <!-- Project 1 -->
       <div class="project-card fade-in delay-100">
         <h3>Campus Event Manager</h3>
-        <p>A comprehensive system designed to streamline the planning, registration, and execution of campus club events seamlessly.</p>
+        <p>A comprehensive system designed to streamline the planning, registration, and execution of campus club events
+          seamlessly.</p>
         <div class="project-tags">
           <span class="tag">Java</span>
           <span class="tag">DBMS</span>
@@ -751,7 +791,8 @@
       <!-- Project 2 -->
       <div class="project-card fade-in delay-200">
         <h3>ReviewGuard AI</h3>
-        <p>An intelligent application focused on analyzing e-commerce text and identifying deceptive/fake reviews using modern data techniques.</p>
+        <p>An intelligent application focused on analyzing e-commerce text and identifying deceptive/fake reviews using
+          modern data techniques.</p>
         <div class="project-tags">
           <span class="tag">Python</span>
           <span class="tag">Machine Learning</span>
@@ -762,7 +803,8 @@
       <!-- Project 3 -->
       <div class="project-card fade-in delay-300">
         <h3>Hybrid Academic Hub</h3>
-        <p>Various micro-service mini-projects exploring hybrid web architectures and innovative digital solutions for academics.</p>
+        <p>Various micro-service mini-projects exploring hybrid web architectures and innovative digital solutions for
+          academics.</p>
         <div class="project-tags">
           <span class="tag">Research</span>
           <span class="tag">Web Technologies</span>
@@ -777,21 +819,32 @@
     <h2 class="section-title fade-in">Let's Connect</h2>
     <div class="contact-wrapper fade-in delay-100">
       <p style="margin-bottom: 40px; color: var(--text-muted); font-size: 1.1rem;">
-        I'm currently seeking new opportunities and challenges. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!
+        I'm currently seeking new opportunities and challenges. Whether you have a question, a project idea, or just
+        want to say hi, I'll try my best to get back to you!
       </p>
-      
+
       <div class="contact-item">
         <div class="contact-icon">
-          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
         </div>
         <a href="mailto:prudhvigajjela8522@gmail.com">prudhvigajjela8522@gmail.com</a>
       </div>
-      
+
       <div class="contact-item">
         <div class="contact-icon">
-          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
         </div>
-        <a href="https://linkedin.com/in/prudhvinarayan" target="_blank" rel="noopener noreferrer">linkedin.com/in/prudhvinarayan</a>
+        <a href="https://linkedin.com/in/prudhvinarayan" target="_blank"
+          rel="noopener noreferrer">linkedin.com/in/prudhvinarayan</a>
       </div>
     </div>
   </section>
@@ -815,7 +868,7 @@
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            
+
             // Animate progress bars when skill card comes into view
             if (entry.target.classList.contains('skill-card')) {
               const bar = entry.target.querySelector('.progress-fill');
@@ -826,7 +879,7 @@
                 }, 200);
               }
             }
-            
+
             // Unobserve after animating once
             observer.unobserve(entry.target);
           }
@@ -837,7 +890,7 @@
       document.querySelectorAll('.fade-in').forEach(el => {
         observer.observe(el);
       });
-      
+
       // Dynamic navbar styling on scroll
       const nav = document.querySelector('nav');
       window.addEventListener('scroll', () => {
@@ -852,4 +905,5 @@
     });
   </script>
 </body>
+
 </html>
