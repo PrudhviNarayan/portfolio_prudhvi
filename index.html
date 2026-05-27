@@ -479,7 +479,7 @@
     .contact-item {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 15px;
       margin-bottom: 25px;
       font-size: 1.15rem;
@@ -498,6 +498,21 @@
       border: 1px solid rgba(56, 189, 248, 0.2);
       transition: transform 0.3s ease;
     }
+    
+    .contact-item a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .contact-item a:visited {
+      color: #ffffff;
+    }
+    
+    .contact-item a:hover {
+      color: var(--primary);
+    }
+    
     /* Footer */
     footer {
       text-align: center;
