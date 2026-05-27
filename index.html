@@ -476,12 +476,11 @@
       text-align: center;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     }
-
     .contact-item {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 15px;
+      justify-content: flex-start;
+      gap: 20px;
       margin-bottom: 25px;
       font-size: 1.15rem;
       font-weight: 600;
@@ -500,20 +499,21 @@
     .contact-item a:hover {
       color: var(--primary);
     }
-
+    
     .contact-icon {
-      width: 48px;
-      height: 48px;
+      width: 60px;
+      min-width: 60px;
+      height: 60px;
       border-radius: 14px;
       background: rgba(56, 189, 248, 0.1);
       color: var(--primary);
       display: flex;
-      align-items: left;
-      justify-content: left;
+      align-items: center;
+      justify-content: center;
       border: 1px solid rgba(56, 189, 248, 0.2);
       transition: transform 0.3s ease;
     }
-
+    
     .contact-item:hover .contact-icon {
       transform: scale(1.1);
       background: var(--primary);
